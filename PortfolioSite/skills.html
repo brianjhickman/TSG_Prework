@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>Brian Hickman | Skills</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
     </head>
     <body>
         <h3>Navigation</h3>
@@ -16,9 +21,28 @@
             <li>Etc.</li>
         </ul>
         <h2>Education</h2>
-        <ul>
-            <li>The Software Guild ;)</li>
-            <li>University of Arkansas</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Institution</th>
+                    <th>Field of Study</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Software Guild</td>
+                    <td>.NET, SQL, HTML, CSS, Javascript</td>
+                    <td colspan="2">Anticipated January, 2018 start date</td>
+                </tr>
+                <tr>
+                    <td>University of Arkansas</td>
+                    <td>Bachelor of Arts in Music</td>
+                    <td>August, 1998</td>
+                    <td>May, 2002</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
