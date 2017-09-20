@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            td {
+                vertical-align: top;
+                padding: 7px;
+            }
+            input[type=submit] {
+                padding: 2px 15px;
+                text-align: center;
+                margin: 0px 25px;
+                background-color: #e7e7e7;
+                border: .5px solid;
+                border-radius: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="POST">
+        <table border="0">    
+            <tr>
+                <td style="text-align:right;"><label id="FirstNameLabel" for="FirstName">First Name: </label></td>
+                <td><input id="FirstName" type="text" name="FirstName" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><label id="LastNameLabel" for="LastName">Last Name: </label></td>
+                <td><input id="LastName" type="text" name="LastName" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><label id="EmailLabel" for="Email">Email: </label></td>
+                <td><input id="Email" type="text" name="Email" /></td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><label id="LicenseTypeLabel" for="LicenseType">Type of License: </label></td>
+                <td><input id="LicenseType" type="radio" name="LicenseType" value="Business" checked />Business
+                <input id="LicenseType" type="radio" name="LicenseType" value="Personal" />Personal</td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><label id="ReasonLabel" for="Reason">Reason: </label></td>
+                <td>
+                    <select id="Reason" name="Reason">
+                    <option value="No reason selected">Select a Reason</option>
+                    <option value="Software Support">Software Support</option>
+                    <option value="Hardware Support">Hardware Support</option>
+                    <option value="Information Request">Information Request</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:right;"><label id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </label></td>
+                <td><textarea id="AdditionalInfo" name="AdditionalInfo"></textarea></td>
+            </tr>
+            <tr>
+                <td><label id="ReadTermsLabel" for="ReadTerms"></label></td>
+                <td><input id="ReadTerms" type="checkbox" name="ReadTerms" value="User has read the terms of service" /> I have read the terms of service.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input id="SubmitButton" type="submit" value="Send Request" /></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
