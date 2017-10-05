@@ -3,12 +3,112 @@
     <head>
         <title>Home Page</title>
         <style>
+            h1 {
+                text-align: center;
+                margin-top: 10px;
+            }
+            th {
+                padding: 15px;
+            }
+            #FooterTable {
+                width: 100%;
+                height: 50px;
+                margin-top: 12.5px;
+                margin-bottom: 12.5px;
+                text-align: center;
+            }
+            #header {
+                background-color: rgba(128, 0, 0, 0.75);
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+                margin-top: 10px;
+            }
+        /* Start of CSS Sticky Footer code */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html, body {
+                height: 100%;
+            }
+            #wrap {
+                min-height: 100%;
+            }
+            #main {
+                overflow: auto;
+                padding-bottom: 75px;
+            }
+            #footer {
+                position: relative;
+                margin-top: -75px;
+                height: 75px;
+                clear: both;
+                background-color: rgba(128, 0, 0, 0.75);  
+                border-top: 3px solid black;
+            }
+            /* Opera-specific fix */
+            body:before {
+                content: "";
+                height: 100%;
+                float: left;
+                width: 0;
+                margin-top: -32767px;
+            }
+        /* End of CSS Sticky Footer code */
+            #body {
+                width: 400px;
+                display: block;
+                margin: auto;
+                margin-top: 20px;
+            }
             img {
-                
+                width: 400px;
+                border: 2px solid black;
+                margin-bottom: 10px;
+            }
+            #TextBox {
+                border: 2px solid black;
+                background: url(images/BackgroundImage.jpg) #A7A7A7;
+                width: 370px;
+                padding: 15px;
+                margin-bottom: 15px;
             }
         </style>
     </head>
     <body>
-
+        <div id="wrap">
+            <div id="main">    
+                <h1>Brian's Bistro</h1>
+                <div id="header">
+                    <table border="0">
+                        <tr>
+                            <th><a href="index.html">Home</a></th>
+                            <th><a href="menu.html">Menu</a></th>
+                            <th><a href="contact.html">Contact Us</a></th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="body">
+                    <img src="images/BriansBistro.jpg"
+                        alt="Brian's Bistro storefront image"/>
+                    <div id="TextBox">
+                        <p>
+                            <ins><strong>WHO WE ARE:</strong></ins><br/>
+                            We are a fantastic, fictitious restaurant.  Despite the fact that our menu items have just been copied over from The Software Guild's "Restaurant Site" lab assignment, and include such basic items as burgers, hot dogs, and sandwiches, we <em>still</em> make the <strong>bold</strong> (fictitious) claim that all of our food is so delectable, mouthwatering, and unique, that it has become <strong>WORLD FAMOUS</strong>!!  A critically acclaimed eatery Hot Spot, it has been said that, "Brian puts the 'B' in 'Bistro.'"  Take one bite of any of our food, and see what all the (false) hype is about for yourself!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <table id="FooterTable" border="0">
+                <tr>
+                    <td><h4>5801 Brian Street, Fayetteville, AR 72701</h4></td>
+                </tr>
+                <tr>
+                    <td><h4>(479) B-FAMOUS &nbsp;/ &nbsp;(479) 232-6687</h4></td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>

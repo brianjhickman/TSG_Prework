@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            h1, h2 {
+                text-align: center;
+                margin-top: 10px;
+            }
+            #FooterTable {
+                width: 100%;
+                height: 50px;
+                margin-top: 12.5px;
+                margin-bottom: 12.5px;
+                text-align: center;
+            }
+            #header {
+                background-color: rgba(128, 0, 0, 0.75);
+                border-top: 3px solid black;
+                border-bottom: 3px solid black;
+                margin-top: 10px;
+            }
+        /* Start of CSS Sticky Footer code */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html, body {
+                height: 100%;
+            }
+            #wrap {
+                min-height: 100%;
+            }
+            #main {
+                overflow: auto;
+                padding-bottom: 75px;
+            }
+            #footer {
+                position: relative;
+                margin-top: -75px;
+                height: 75px;
+                clear: both;
+                background-color: rgba(128, 0, 0, 0.75);  
+                border-top: 3px solid black;
+            }
+            /* Opera-specific fix */
+            body:before {
+                content: "";
+                height: 100%;
+                float: left;
+                width: 0;
+                margin-top: -32767px;
+            }
+        /* End of CSS Sticky Footer code */
+        #FormTable {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 26%;
+            }
+        td {
+            padding: 8px;
+        }
+        input[type=submit] {
+            padding: 5px 5px;
+            text-align: center;
+            background: url(images/BackgroundImage.jpg) #A7A7A7;
+            border: .5px solid;
+            margin: 0px 50px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="main">    
+                <h1>Brian's Bistro</h1>
+                <div id="header">
+                    <table border="0">
+                        <tr>
+                            <th style="padding:15px;"><a href="index.html">Home</a></th>
+                            <th style="padding:15px;"><a href="menu.html">Menu</a></th>
+                            <th style="padding:15px;"><a href="contact.html">Contact Us</a></th>
+                        </tr>
+                    </table>
+                </div>
+                <br/>
+                <h2>Contact Us</h2>
+                <form action="#" method="POST">
+                <table id="FormTable" border="0">
+                    <tr>
+                        <td style="text-align:right;"><label id="NameLabel" for="Name">Name: </label></td>
+                        <td><input id="Name" type="text" name="Name" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><label id="EmailLabel" for="Email">Email: </label></td>
+                        <td><input id="Email" type="text" name="Email" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><label id="PhoneLabel" for="Phone">Phone: </label></td>
+                        <td><input id="Phone" type="text" name="Phone" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><label id="ReasonLabel" for="Reason">Reason for Inquiry: </label></td>
+                        <td>
+                            <select id="Reason" name="Reason">
+                                <option value="Catering">Catering</option>
+                                <option value="Private Party">Private Party</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right; vertical-align:top;"><lable id="AdditionalInfoLabel" for="AdditionalInfo">Additional Information: </lable></td>
+                        <td><textarea id="AdditionalInfo" name="AdditionalInfo"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><label id="BeenBeforeLabel" for="BeenBefore">Have you been to the restaurant? </label></td>
+                        <td>
+                            <input id="BeenBefore" type="radio" name="BeenBefore" value="No" checked />&nbsp;No&nbsp;&nbsp;
+                            <input id="BeenBefore" type="radio" name="BeenBefore" value="Yes" />&nbsp;Yes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:right;"><label id="DaysToContactLabel" for="DaysToContact">Best days to contact you: </label></td>
+                        <td>
+                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Monday" />&nbsp;M&nbsp;
+                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Tuesday" />&nbsp;T&nbsp;
+                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Wednesday" />&nbsp;W&nbsp;
+                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Thursday" />&nbsp;Th&nbsp;
+                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Friday" />&nbsp;F&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input id="SubmitButton" type="submit" value="Send Request" /></td>
+                    </tr>
+                </table>    
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <table id="FooterTable" border="0">
+                <tr>
+                    <td style="padding:0px;"><h4>5801 Brian Street, Fayetteville, AR 72701</h4></td>
+                </tr>
+                <tr>
+                    <td style="padding:0px;"><h4>(479) B-FAMOUS &nbsp;/ &nbsp;(479) 232-6687</h4></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
