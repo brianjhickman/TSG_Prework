@@ -6,17 +6,36 @@
               rel="stylesheet"
               type="text/css" />
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+            .GothicFont {
+                font-family: 'Didact Gothic', sans-serif;                
+            }
+            /*
             img {
                 display: block;
                 margin: auto;
             }
+            */
+            #imageAsBackground {
+                margin: auto;
+                width: 400px;
+                height: 400px;
+                background: url("Images/OKComputer_AlbumCover.jpg") no-repeat;
+                background-size: 400px;
+            }
+            .italics {
+                font-style: italic;
+            }
         </style>
     </head>
     <body>
+        <!--
         <img src="Images/OKComputer_AlbumCover.jpg"
              alt="OK Computer album cover image"
              style="width:400px;"/>
-        <h1>OK Computer</h1>
+        -->
+        <div id="imageAsBackground"></div>    
+        <h1 class="GothicFont" style="text-shadow:1px 0 black;">OK COMPUTER</h1>
         <h2><a href="https://www.radiohead.com" target="_blank">Radiohead</a></h2>
         <h3>Released June 16, 1997</h3>
         <hr />
@@ -29,29 +48,29 @@
             Sluggish, understated, and hard to get a grip on, <i>OK Computer</i> takes a few listens to appreciate, but its entirety means more than any one song. --<i>Douglas Wolk</i>
         </p>
         -->
-        <h2>Band Members</h2>
+        <h2 class="GothicFont">Band Members</h2>
         <ul>
-            <li>Colin Greenwood - bass guitar, bass synthesiser, percussion</li>
-            <li>Jonny Greenwood - guitar, keyboards, piano, Mellotron, organ, glockenspiel, string arrangements</li>
-            <li>Ed O'Brien - guitar, FX, percussion, backing vocals</li>
-            <li>Phil Selway - drums, percussion</li>
-            <li>Thom Yorke - vocals, guitar, piano, laptop, programming</li>
+            <li><span class="italics">Colin Greenwood</span> - bass guitar, bass synthesiser, percussion</li>
+            <li><span class="italics">Jonny Greenwood</span> - guitar, keyboards, piano, Mellotron, organ, glockenspiel, string arrangements</li>
+            <li><span class="italics">Ed O'Brien</span> - guitar, FX, percussion, backing vocals</li>
+            <li><span class="italics">Phil Selway</span> - drums, percussion</li>
+            <li><span class="italics">Thom Yorke</span> - vocals, guitar, piano, laptop, programming</li>
         </ul>
         <br />
-        <h3>Additional Musicians and Producers</h3>
+        <h3 class="GothicFont">Additional Musicians and Producers</h3>
         <ul>
-            <li>Royal Philharmonic Orchestra - strings on "Man of War"</li>
-            <li>Rachel Owen - washing up on "How I Made My Millions"</li>
-            <li>Nigel Godrich - production, engineering</li>
-            <li>Jim Warren - production, engineering</li>
+            <li><span class="italics">Royal Philharmonic Orchestra</span> - strings on "Man of War"</li>
+            <li><span class="italics">Rachel Owen</span> - washing up on "How I Made My Millions"</li>
+            <li><span class="italics">Nigel Godrich</span> - production, engineering</li>
+            <li><span class="italics">Jim Warren</span> - production, engineering</li>
         </ul>
         <table border="1" width="100%">
             <caption><h2>Tracks</h2></caption>
             <thead>
                 <tr bgcolor="grey">
-                    <th width="10%">Track #</th>
-                    <th width="30%">Track Title</th>
-                    <th width="60%">Track Length</th>
+                    <th width="15%">Track #</th>
+                    <th width="62%">Track Title</th>
+                    <th width="23%">Track Length</th>
                 </tr>
             </thead>
             <tbody>
