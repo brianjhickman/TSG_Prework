@@ -11,3 +11,24 @@ table, td, th {
 th {
     border-bottom: 2px solid black;
 }
+tbody {
+    font-style: italic;
+    background-color: rgba(120, 139, 202, 0.5);
+}
+a {
+    text-decoration: none;
+    font-weight: none;
+}
+a:link {
+    color: rgb(0, 140, 255);
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: rgba(61, 174, 255, 0.336);
+}
+a:active {
+    font-weight: bold;
+}
