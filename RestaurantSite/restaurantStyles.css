@@ -2,6 +2,22 @@
 .bistroFont {
     font-family: 'Merriweather', serif;
 }
+a {
+    text-decoration: underline;
+    font-weight: normal;    
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: rgb(200, 192, 178);
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    text-decoration: none; 
+}
 h1 {
     text-align: center;
     margin-top: 10px;
@@ -13,7 +29,7 @@ h1 {
     margin-bottom: 12.5px;
     text-align: center;
 }
-#header {
+#siteNav {
     background-color: rgba(128, 0, 0, 0.75);
     border-top: 3px solid black;
     border-bottom: 3px solid black;

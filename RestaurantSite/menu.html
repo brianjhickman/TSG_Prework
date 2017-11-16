@@ -8,39 +8,62 @@
         <style>
             h2 {
                 text-align: center;
-                margin-top: 10px;
+                margin-top: 15px;
             }            
             #menu {
                 text-align: center;
-                padding-top: 60px;
-                padding-bottom: 35px;
+                padding-top: 55px;
+                padding-bottom: 15px;
                 padding-left: 25px;
                 padding-right: 25px;
                 width: 90%;
                 background-color: rgba(180, 156, 101, 0.3);
                 margin: auto;
                 margin-top: 20px;
-                margin-bottom: 55px;
-                          
+                border: 10px solid rgba(128, 0, 0, 0.25);
+                border-bottom: none;
             }
-            th {
+            #menu th {
                 padding-left: 15px;
                 padding-right: 15px;
             }
-            td {
+            #menu td {
                 padding-top: 10px;
                 padding-bottom: 30px;
                 padding-left: 40px;
                 padding-right: 40px;
             }
+            #bevMenuContainer {
+                width: 90%;
+                background-color: rgba(180, 156, 101, 0.3);
+                margin: auto;
+                margin-bottom: 80px;
+                padding-bottom: 50px;
+                border: 10px solid rgba(128, 0, 0, 0.25);
+                border-top: none;
+            }
+            #bevMenu {
+                width: 100%;
+                text-align: left;
+                padding-left: 90px;
+                padding-right: 90px;
+                padding-bottom: 30px;
+                background-color: rgba(128, 0, 0, 0.20);
+            }          
+            thead td {
+                text-decoration: underline;
+                font-weight: bold;
+                padding-top: 30px;
+                font-size: larger;                                               
+            }            
         </style>
     </head>
     <body>
         <div id="wrap">
             <div id="main">    
                 <h1 class="bistroFont">Brian's Bistro</h1>
-                <div id="header">
-                    <table border="0">
+                <div id="siteNav">
+                    <table>
                         <tr>
                             <th style="padding:15px;"><a href="index.html">Home</a></th>
                             <th style="padding:15px;"><a href="menu.html">Menu</a></th>
@@ -108,6 +131,43 @@
                             $7.95
                         </td>
                     </tr>
+                </table>                
+                <table id="bevMenuContainer">
+                    <tr>
+                        <!-- Left, empty column at bottom of menu-->
+                        <td width="33.333%"></td>
+                        <!-- Middle column at bottom of menu, containing Beverage Menu section -->
+                        <td width="33.333%" style="border:3px solid lightgray;">
+                        <table id="bevMenu">
+                            <thead>
+                                <tr>
+                                    <td width="20%">Beverages</td>
+                                    <td width="13.333%"></td>                                    
+                                </tr>
+                            </thead>
+                            <tbody>                                
+                                <tr>                                    
+                                    <td><br/>Lemonade</td>
+                                    <td><br/>$2.50</td>                                    
+                                </tr>
+                                <tr>                                    
+                                    <td>Iced Tea</td>
+                                    <td>$2.50</td>                                    
+                                </tr>
+                                <tr>                                    
+                                    <td>Root Beer</td>
+                                    <td>$2.95</td>                                    
+                                </tr>
+                                <tr>                                    
+                                    <td>Bottled Water</td>
+                                    <td>$1.50</td>                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                        <!-- Right, empty column at bottom of menu -->
+                        <td width="33.333%"></td>
+                    </tr>                    
                 </table>
             </div>
         </div>
