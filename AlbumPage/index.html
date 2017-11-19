@@ -5,6 +5,13 @@
         <link href="albumStyles.css"
               rel="stylesheet"
               type="text/css" />
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
         <style>
             @import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
             .GothicFont {
@@ -16,12 +23,17 @@
                 margin: auto;
             }
             */
+            th {
+                text-align: center;
+            }
             #imageAsBackground {
                 margin: auto;
+                margin-top: 20px;
                 width: 400px;
                 height: 400px;
                 background: url("Images/OKComputer_AlbumCover.jpg") no-repeat;
                 background-size: 400px;
+                background-position: center;
             }
             .italics {
                 font-style: italic;
@@ -34,107 +46,109 @@
              alt="OK Computer album cover image"
              style="width:400px;"/>
         -->
-        <div id="imageAsBackground"></div>    
-        <h1 class="GothicFont" style="text-shadow:1px 0 black;">OK COMPUTER</h1>
-        <h2><a href="https://www.radiohead.com" target="_blank">Radiohead</a></h2>
-        <h3>Released June 16, 1997</h3>
-        <hr />
-        <!-- Deleted following description/review section -->
-        <!--
-        <h4>Album description/critic review:</h4>
-        <p>
-            Radiohead's third album got compared to Pink Floyd a lot when it came out, and its slow drama and conceptual sweep certainly put it in that category.  
-            <i>OK Computer</i>, though, is a complicated and difficult record: an album about the way machines dehumanize people that's almost entirely un-electronic; an album by a British "new wave of new wave" band that rejects speed and hooks in favor of languorous texture and morose details; a sad and humanist record whose central moment is Thom Yorke crooning "We hope that you choke."  
-            Sluggish, understated, and hard to get a grip on, <i>OK Computer</i> takes a few listens to appreciate, but its entirety means more than any one song. --<i>Douglas Wolk</i>
-        </p>
-        -->
-        <h2 class="GothicFont">Band Members</h2>
-        <ul>
-            <li><span class="italics">Colin Greenwood</span> - bass guitar, bass synthesiser, percussion</li>
-            <li><span class="italics">Jonny Greenwood</span> - guitar, keyboards, piano, Mellotron, organ, glockenspiel, string arrangements</li>
-            <li><span class="italics">Ed O'Brien</span> - guitar, FX, percussion, backing vocals</li>
-            <li><span class="italics">Phil Selway</span> - drums, percussion</li>
-            <li><span class="italics">Thom Yorke</span> - vocals, guitar, piano, laptop, programming</li>
-        </ul>
-        <br />
-        <h3 class="GothicFont">Additional Musicians and Producers</h3>
-        <ul>
-            <li><span class="italics">Royal Philharmonic Orchestra</span> - strings on "Man of War"</li>
-            <li><span class="italics">Rachel Owen</span> - washing up on "How I Made My Millions"</li>
-            <li><span class="italics">Nigel Godrich</span> - production, engineering</li>
-            <li><span class="italics">Jim Warren</span> - production, engineering</li>
-        </ul>
-        <table border="1" width="100%">
-            <caption><h2>Tracks</h2></caption>
-            <thead>
-                <tr bgcolor="grey">
-                    <th width="15%">Track #</th>
-                    <th width="62%">Track Title</th>
-                    <th width="23%">Track Length</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Airbag</td>
-                    <td>4:44</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Paranoid Android</td>
-                    <td>6:23</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Subterranean Homesick Alien</td>
-                    <td>4:27</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Exit Music (For a Film)</td>
-                    <td>4:24</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Let Down</td>
-                    <td>4:59</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Karma Police</td>
-                    <td>4:21</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Fitter Happier</td>
-                    <td>1:57</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Electioneering</td>
-                    <td>3:50</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Climbing Up the Walls</td>
-                    <td>4:45</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>No Surprises</td>
-                    <td>3:48</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Lucky</td>
-                    <td>4:19</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>The Tourist</td>
-                    <td>5:24</td>
-                </tr>
-            </tbody>
-        </table>            
+        <div class="container">        
+            <div id="imageAsBackground" class="img-circle img-responsive"></div>    
+            <h1 class="GothicFont" style="text-shadow:1px 0 black;">OK COMPUTER</h1>
+            <h2><a href="https://www.radiohead.com" target="_blank">Radiohead</a></h2>
+            <h3>Released June 16, 1997</h3>
+            <hr />
+            <!-- Deleted following description/review section -->
+            <!--
+            <h4>Album description/critic review:</h4>
+            <p>
+                Radiohead's third album got compared to Pink Floyd a lot when it came out, and its slow drama and conceptual sweep certainly put it in that category.  
+                <i>OK Computer</i>, though, is a complicated and difficult record: an album about the way machines dehumanize people that's almost entirely un-electronic; an album by a British "new wave of new wave" band that rejects speed and hooks in favor of languorous texture and morose details; a sad and humanist record whose central moment is Thom Yorke crooning "We hope that you choke."  
+                Sluggish, understated, and hard to get a grip on, <i>OK Computer</i> takes a few listens to appreciate, but its entirety means more than any one song. --<i>Douglas Wolk</i>
+            </p>
+            -->
+            <h2 class="GothicFont">Band Members</h2>
+            <ul>
+                <li><span class="italics">Colin Greenwood</span> - bass guitar, bass synthesiser, percussion</li>
+                <li><span class="italics">Jonny Greenwood</span> - guitar, keyboards, piano, Mellotron, organ, glockenspiel, string arrangements</li>
+                <li><span class="italics">Ed O'Brien</span> - guitar, FX, percussion, backing vocals</li>
+                <li><span class="italics">Phil Selway</span> - drums, percussion</li>
+                <li><span class="italics">Thom Yorke</span> - vocals, guitar, piano, laptop, programming</li>
+            </ul>
+            <br />
+            <h3 class="GothicFont">Additional Musicians and Producers</h3>
+            <ul>
+                <li><span class="italics">Royal Philharmonic Orchestra</span> - strings on "Man of War"</li>
+                <li><span class="italics">Rachel Owen</span> - washing up on "How I Made My Millions"</li>
+                <li><span class="italics">Nigel Godrich</span> - production, engineering</li>
+                <li><span class="italics">Jim Warren</span> - production, engineering</li>
+            </ul>
+            <table width="100%" class="table table-responsive table-striped">
+                <caption><h3>Tracks</h3></caption>
+                <thead>
+                    <tr bgcolor="grey">
+                        <th width="15%">Track #</th>
+                        <th width="62%">Track Title</th>
+                        <th width="23%">Track Length</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Airbag</td>
+                        <td>4:44</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Paranoid Android</td>
+                        <td>6:23</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Subterranean Homesick Alien</td>
+                        <td>4:27</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Exit Music (For a Film)</td>
+                        <td>4:24</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Let Down</td>
+                        <td>4:59</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Karma Police</td>
+                        <td>4:21</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Fitter Happier</td>
+                        <td>1:57</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Electioneering</td>
+                        <td>3:50</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Climbing Up the Walls</td>
+                        <td>4:45</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>No Surprises</td>
+                        <td>3:48</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Lucky</td>
+                        <td>4:19</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>The Tourist</td>
+                        <td>5:24</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </div>                    
     </body>
 </html>
