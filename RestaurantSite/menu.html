@@ -1,185 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Menu</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        
         <link href="restaurantStyles.css"
               rel="stylesheet"
               type="text/css" />
         <style>
             h2 {
                 text-align: center;
-                margin-top: 15px;
-            }            
+                margin-top: 0;                            
+            }                        
             #menu {
                 text-align: center;
-                padding-top: 55px;
+                padding-top: 45px;
                 padding-bottom: 15px;
-                padding-left: 25px;
-                padding-right: 25px;
-                width: 90%;
+                padding-left: 30px;
+                padding-right: 30px;
+                width: 92%;
                 background-color: rgba(180, 156, 101, 0.3);
                 margin: auto;
                 margin-top: 20px;
-                border: 10px solid rgba(128, 0, 0, 0.25);
-                border-bottom: none;
-            }
-            #menu th {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-            #menu td {
-                padding-top: 10px;
-                padding-bottom: 30px;
-                padding-left: 40px;
-                padding-right: 40px;
-            }
-            #bevMenuContainer {
-                width: 90%;
-                background-color: rgba(180, 156, 101, 0.3);
-                margin: auto;
                 margin-bottom: 80px;
-                padding-bottom: 50px;
-                border: 10px solid rgba(128, 0, 0, 0.25);
-                border-top: none;
+                border: 9px solid rgba(128, 0, 0, 0.25);                
             }
+            .menu-header {
+                font-size: larger;
+                font-weight: bold;
+            }          
             #bevMenu {
                 width: 100%;
-                text-align: left;
-                padding-left: 90px;
-                padding-right: 90px;
-                padding-bottom: 30px;
+                text-align: left;                
                 background-color: rgba(128, 0, 0, 0.20);
+                border: 3px solid lightgray;                
             }          
             thead td {
                 text-decoration: underline;
                 font-weight: bold;
-                padding-top: 30px;
+                padding: 20px 45px 5px 45px;
                 font-size: larger;                                               
-            }            
+            }
+            #bevMenu tbody td {
+                padding-left: 45px;
+                padding-right: 5px;                
+            }
+            #bevMenu .padding-change {
+                padding-left: 5px;
+                padding-right: 45px;
+                text-align: right;
+                vertical-align: top;
+            }
+            #menu .col-sm-4, .col-md-4 {
+                padding-bottom: 15px;
+            }             
         </style>
     </head>
+    
     <body>
         <div id="wrap">
-            <div id="main">    
+        <div id="main">    
+            <div class="container-fluid">
+            <div class="row">
                 <h1 class="bistroFont">Brian's Bistro</h1>
-                <div id="siteNav">
-                    <table>
-                        <tr>
-                            <th style="padding:15px;"><a href="index.html">Home</a></th>
-                            <th style="padding:15px;"><a href="menu.html">Menu</a></th>
-                            <th style="padding:15px;"><a href="contact.html">Contact Us</a></th>
-                        </tr>
-                    </table>
+                <nav>
+                    <ul class="nav nav-tabs">
+                            <li role="presentation" style="padding-left:10px;"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                            <li role="presentation" class="active"><a href="#">Menu</a></li>
+                            <li role="presentation"><a href="contact.html">Contact Us</a></li>
+                    </ul>                    
+                </nav>
+                <div class="jumbotron">
+                    <p><strong>Coming Soon!!</strong>  &nbsp;We are opening a second location in <span style="color:rgba(128, 0, 0, 0.75);"><em>Louisville, KY</em></span>!</p>
                 </div>
-                <br/>
-                <h2>Menu</h2>
-                <table id="menu">
-                    <tr style="font-size:larger;">
-                        <th>Burger and Fries</th>
-                        <th>Hot Dog and Chips</th>
-                        <th>Italian Sausage and Peppers</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            A WORLD FAMOUS American Classic!<br/>
-                            Your choice - with or without cheese<br/>
-                            Pickle, onion, tomato, and lettuce<br/>
-                            Served with our (world famous) thick-cut french fries<br/>
-                            $7.95
-                        </td>
-                        <td>
-                            A WORLD FAMOUS Summer Classic!<br/>
-                            Your choice - white or wheat bun<br/>
-                            Relish, mustard, and ketchup<br/>
-                            Served with our house-made chips<br/>
-                            $7.95
-                        </td>
-                        <td>
-                            A WORLD FAMOUS All-Time Favorite!!<br/>
-                            Your choice - mild or spicy<br/>
-                            Cole slaw<br/>
-                            Served with garlic mashers<br/>
-                            $10.95 
-                        </td>
-                    </tr>
-                    <tr style="font-size:larger;">
-                        <th>Tenderloin Sandwich and Chips</th>
-                        <th>House Salad</th>
-                        <th>Brisket Sandwich and Fries</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            (WORLD FAMOUS) and Really Hits the Spot!<br/>
-                            Plain or sesame seed bun<br/>
-                            Pickle, onion, tomato, and lettuce<br/>
-                            Served with our house-made chips<br/>
-                            $8.95
-                        </td>
-                        <td>
-                            On the Lighter Side (and WORLD FAMOUS!)<br/>
-                            Your choice - with or without cheese<br/>
-                            Iceberg lettuce, tomatoes, and peppers<br/>
-                            Thousand Island or ranch dressing<br/>
-                            Served with a dinner roll<br/>
-                            $6.95
-                        </td>
-                        <td>
-                            A WORLD FAMOUS Taste of Texas!<br/>
-                            Smoked brisket on thick-cut Texas toast<br/>
-                            Cole slaw<br/>
-                            Served with our (world famous) thick-cut french fries<br/>
-                            $7.95
-                        </td>
-                    </tr>
-                </table>                
-                <table id="bevMenuContainer">
-                    <tr>
-                        <!-- Left, empty column at bottom of menu-->
-                        <td width="33.333%"></td>
-                        <!-- Middle column at bottom of menu, containing Beverage Menu section -->
-                        <td width="33.333%" style="border:3px solid lightgray;">
-                        <table id="bevMenu">
-                            <thead>
-                                <tr>
-                                    <td width="20%">Beverages</td>
-                                    <td width="13.333%"></td>                                    
-                                </tr>
-                            </thead>
-                            <tbody>                                
-                                <tr>                                    
-                                    <td><br/>Lemonade</td>
-                                    <td><br/>$2.50</td>                                    
-                                </tr>
-                                <tr>                                    
-                                    <td>Iced Tea</td>
-                                    <td>$2.50</td>                                    
-                                </tr>
-                                <tr>                                    
-                                    <td>Root Beer</td>
-                                    <td>$2.95</td>                                    
-                                </tr>
-                                <tr>                                    
-                                    <td>Bottled Water</td>
-                                    <td>$1.50</td>                                    
-                                </tr>
-                            </tbody>
-                        </table>
-                        </td>
-                        <!-- Right, empty column at bottom of menu -->
-                        <td width="33.333%"></td>
-                    </tr>                    
-                </table>
             </div>
+            </div>
+                
+            <div class="container-fluid">
+                <h2>Menu</h2>
+                <div id="menu">                    
+                    <div class="row">
+                        <div class="col-md-4">                            
+                            <p class="menu-header">Burger and Fries</p>                            
+                            <p>
+                                A WORLD FAMOUS American Classic!<br/>
+                                Your choice - with or without cheese<br/>
+                                Pickle, onion, tomato, and lettuce<br/>
+                                Served with our (world famous) thick-cut french fries<br/>
+                                $7.95
+                            </p>
+                        </div>
+                        <div class="col-md-4">                            
+                            <p class="menu-header">Hot Dog and Chips</p>
+                            <p>
+                                A WORLD FAMOUS Summer Classic!<br/>
+                                Your choice - white or wheat bun<br/>
+                                Relish, mustard, and ketchup<br/>
+                                Served with our house-made chips<br/>
+                                $7.95
+                            </p>
+                        </div>
+                        <div class="col-md-4">                            
+                            <p class="menu-header">Italian Sausage and Peppers</p>                            
+                            <p>
+                                A WORLD FAMOUS All-Time Favorite!!<br/>
+                                Your choice - mild or spicy<br/>
+                                Cole slaw<br/>
+                                Served with garlic mashers<br/>
+                                $10.95 
+                            </p>                            
+                        </div>
+                    </div>                                 
+                                        
+                    <div class="row">
+                        <div class="col-md-4">                            
+                            <p class="menu-header">Tenderloin Sandwich and Chips</p>
+                            <p>
+                                (WORLD FAMOUS) and Really Hits the Spot!<br/>
+                                Plain or sesame seed bun<br/>
+                                Pickle, onion, tomato, and lettuce<br/>
+                                Served with our house-made chips<br/>
+                                $8.95 
+                            </p>
+                        </div>
+                        <div class="col-md-4">                           
+                            <p class="menu-header">House Salad</p>
+                            <p>
+                                On the Lighter Side (and WORLD FAMOUS!)<br/>
+                                Your choice - with or without cheese<br/>
+                                Iceberg lettuce, tomatoes, and peppers<br/>
+                                Thousand Island or ranch dressing<br/>
+                                Served with a dinner roll<br/>
+                                $6.95
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="menu-header">Brisket Sandwich and Fries</p>
+                            <p>
+                                A WORLD FAMOUS Taste of Texas!<br/>
+                                Smoked brisket on thick-cut Texas toast<br/>
+                                Cole slaw<br/>
+                                Served with our (world famous) thick-cut french fries<br/>
+                                $7.95     
+                            </p>
+                        </div>
+                    </div>                    
+
+                    <div class="row">
+                        <div class="col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
+                            <div class="table-responsive">
+                                <table id="bevMenu">
+                                    <thead>
+                                        <tr>
+                                            <td colspan="2">Beverages</td>                                                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>                                
+                                        <tr>                                    
+                                            <td>Lemonade</td>
+                                            <td class="padding-change">$2.50</td>                                    
+                                        </tr>
+                                        <tr>                                    
+                                            <td>Iced Tea</td>
+                                            <td class="padding-change">$2.50</td>                                    
+                                        </tr>
+                                        <tr>                                    
+                                            <td>Root Beer</td>
+                                            <td class="padding-change">$2.95</td>                                    
+                                        </tr>
+                                        <tr>                                    
+                                            <td style="padding-bottom:20px;">Bottled Water</td>
+                                            <td class="padding-change" style="padding-bottom:20px;">$1.50</td>                                    
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-md-4">                           
+                            <!-- Empty column -->                       
+                        </div>
+                    </div>
+                    <div class="visible-sm"><br/></div>
+                </div>            
+            </div>    
         </div>
-        <div id="footer">
-            <table id="FooterTable" border="0">
-                <tr>
-                    <td style="padding:0px;"><h4>5801 Brian Street, Fayetteville, AR 72701</h4></td>
-                </tr>
-                <tr>
-                    <td style="padding:0px;"><h4>(479) B-FAMOUS &nbsp;/ &nbsp;(479) 232-6687</h4></td>
-                </tr>
-            </table>
         </div>
+
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                <table id="FooterTable">
+                    <tr>
+                        <td style="vertical-align:bottom;">
+                            <!-- Phone xs layout -->
+                            <div class="col-xs-12 visible-xs" style="padding-top:10px;">5801 Brian Street,</div>
+                            <div class="col-xs-12 visible-xs"> Fayetteville, AR 72701</div>
+                            <!-- Non-phone layout -->
+                            <div class="col-sm-12 visible-sm visible-md visible-lg">5801 Brian Street, Fayetteville, AR 72701</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">
+                            <!-- Phone xs layout -->
+                            <div class="col-xs-12 visible-xs">(479) B-FAMOUS &nbsp;/</div>
+                            <div class="col-xs-12 visible-xs" style="padding-bottom:10px;"> &nbsp;(479) 232-6687</div>
+                            <!-- Non-phone layout -->
+                            <div class="col-sm-12 visible-sm visible-md visible-lg">(479) B-FAMOUS &nbsp;/ &nbsp;(479) 232-6687</div>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

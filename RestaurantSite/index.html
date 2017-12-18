@@ -1,58 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Home Page</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>        
+        
         <link href="restaurantStyles.css"
               rel="stylesheet"
-              type="text/css" />
+              type="text/css" />      
         <style>
-            th {
-                padding: 15px;
-            }           
             #TextBox {
                 border: 2px solid black;
-                background: url("images/BackgroundImage.jpg");
-                width: 370px;
+                background: url("images/BackgroundImage.jpg");                        
                 padding: 15px;
                 margin-bottom: 60px;
+                font-size: 105%;
             }
         </style>
     </head>
+    
     <body>
-        <div id="wrap">
-            <div id="main">    
+        <div id="wrap">          
+        <div id="main">
+            <div class="container-fluid"> 
+            <div class="row">
                 <h1 class="bistroFont">Brian's Bistro</h1>
-                <div id="siteNav">
-                    <table>
-                        <tr>
-                            <th><a href="index.html">Home</a></th>
-                            <th><a href="menu.html">Menu</a></th>
-                            <th><a href="contact.html">Contact Us</a></th>
-                        </tr>
-                    </table>
-                </div>                
-                <div id="body" style="width:400px; display:block; margin:auto; margin-top:25px;">
-                    <img src="images/BriansBistro.jpg"
-                         alt="Brian's Bistro storefront image"
-                         style="width:400px; border:2px solid black; margin-bottom:15px;"/>
-                    <div id="TextBox">
-                        <p>
-                            <ins><strong>WHO WE ARE:</strong></ins><br/>
-                            We are a fantastic, fictitious restaurant.  Despite the fact that our menu items have just been copied over from The Software Guild's "Restaurant Site" lab assignment, and include such basic items as burgers, hot dogs, and sandwiches, we <em>still</em> make the <strong>bold</strong> (fictitious) claim that all of our food is so delectable, mouthwatering, and unique, that it has become <strong>WORLD FAMOUS</strong>!!  A critically acclaimed eatery Hot Spot, it has been said that, "Brian puts the 'B' in 'Bistro.'"  Take one bite of any of our food, and see what all the (false) hype is about for yourself!
-                        </p>
-                    </div>
+                <nav>
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active" style="padding-left:10px;"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                        <li role="presentation"><a href="menu.html">Menu</a></li>
+                        <li role="presentation"><a href="contact.html">Contact Us</a></li>
+                    </ul>                  
+                </nav>
+                <div class="jumbotron">
+                    <p><strong>Coming Soon!!</strong>  &nbsp;We are opening a second location in <span style="color:rgba(128, 0, 0, 0.75);"><em>Louisville, KY</em></span>!</p>
                 </div>
             </div>
+            </div>                                
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+                        <div style="margin:auto;">                
+                            <img src="images/BriansBistro.jpg"
+                                    alt="Brian's Bistro storefront image"
+                                    class="img-responsive"
+                                    style="border:2px solid black; margin-bottom:20px;"/>
+                            <div id="TextBox">
+                                <p>
+                                    <ins><strong>WHO WE ARE:</strong></ins><br/>
+                                    We are a fantastic, fictitious restaurant.  Despite the fact that our menu items have just been copied over from The Software Guild's "Restaurant Site" lab assignment, and include such basic items as burgers, hot dogs, and sandwiches, we <em>still</em> make the <strong>bold</strong> (fictitious) claim that all of our food is so delectable, mouthwatering, and unique, that it has become <strong>WORLD FAMOUS</strong>!!  A critically acclaimed eatery Hot Spot, it has been said that, "Brian puts the 'B' in 'Bistro.'"  Take one bite of any of our food, and see what all the (false) hype is about for yourself!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-md-2">
+                        <!-- Page content right margin (empty column) -->
+                    </div>
+                </div>                                            
+            </div>
         </div>
-        <div id="footer">
-            <table id="FooterTable" border="0">
-                <tr>
-                    <td><h4>5801 Brian Street, Fayetteville, AR 72701</h4></td>
-                </tr>
-                <tr>
-                    <td><h4>(479) B-FAMOUS &nbsp;/ &nbsp;(479) 232-6687</h4></td>
-                </tr>
-            </table>
-        </div>
+        </div>  
+
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                <table id="FooterTable">
+                    <tr>
+                        <td style="vertical-align:bottom;">
+                            <!-- Phone xs layout -->
+                            <div class="col-xs-12 visible-xs" style="padding-top:10px;">5801 Brian Street,</div>
+                            <div class="col-xs-12 visible-xs"> Fayetteville, AR 72701</div>
+                            <!-- Non-phone layout -->
+                            <div class="col-sm-12 visible-sm visible-md visible-lg">5801 Brian Street, Fayetteville, AR 72701</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">
+                            <!-- Phone xs layout -->
+                            <div class="col-xs-12 visible-xs">(479) B-FAMOUS &nbsp;/</div>
+                            <div class="col-xs-12 visible-xs" style="padding-bottom:10px;"> &nbsp;(479) 232-6687</div>
+                            <!-- Non-phone layout -->
+                            <div class="col-sm-12 visible-sm visible-md visible-lg">(479) B-FAMOUS &nbsp;/ &nbsp;(479) 232-6687</div>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>        
+        </footer>
     </body>
 </html>

@@ -1,117 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Contact Us</title>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>        
+        
         <link href="restaurantStyles.css"
               rel="stylesheet"
               type="text/css" />
         <style>
             h2 {
                 text-align: center;
-                margin-top: 10px;
+                margin-top: 0;              
             }            
-            #FormTable {
+            form {
                 margin-top: 15px;
-                margin-bottom: 25px;
-                margin-left: 26%;
+                margin-bottom: 60px;
             }
-            td {
-                padding: 8px;
+            .normal-font {
+                font-weight: normal;
             }
-            input[type=submit] {
-                padding: 5px 5px;
-                text-align: center;
-                background: url("images/BackgroundImage.jpg");                                
-                border: .5px solid;
-                margin: 0px 50px;                
-            }
-            .bold {
-                font-weight: bold;
-            }            
         </style>
     </head>
+    
     <body>
         <div id="wrap">
-            <div id="main">    
+        <div id="main">    
+            <div class="container-fluid">
+            <div class="row">
                 <h1 class="bistroFont">Brian's Bistro</h1>
-                <div id="siteNav">
-                    <table>
-                        <tr>
-                            <th style="padding:15px;"><a href="index.html">Home</a></th>
-                            <th style="padding:15px;"><a href="menu.html">Menu</a></th>
-                            <th style="padding:15px;"><a href="contact.html">Contact Us</a></th>
-                        </tr>
-                    </table>
+                <nav>
+                    <ul class="nav nav-tabs">
+                            <li role="presentation" style="padding-left:10px;"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                            <li role="presentation"><a href="menu.html">Menu</a></li>
+                            <li role="presentation" class="active"><a href="#">Contact Us</a></li>
+                    </ul>                    
+                </nav>
+                <div class="jumbotron">
+                    <p><strong>Coming Soon!!</strong>  &nbsp;We are opening a second location in <span style="color:rgba(128, 0, 0, 0.75);"><em>Louisville, KY</em></span>!</p>
                 </div>
-                <br/>
+            </div>
+            </div>
+
+            <div style="max-width:900px" class="container-fluid">
                 <h2>Contact Us</h2>
-                <form action="#" method="POST">
-                <table id="FormTable">
-                    <tr>
-                        <td style="text-align:right;"><label id="NameLabel" for="Name" class="bold">Name*: </label></td>
-                        <td><input id="Name" type="text" name="Name" /></td>                        
-                    </tr>
-                    <tr>
-                        <td style="text-align:right;"><label id="EmailLabel" for="Email" class="bold">Email: </label></td>
-                        <td><input id="Email" type="text" name="Email" /></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right;"><label id="PhoneLabel" for="Phone">Phone: </label></td>
-                        <td><input id="Phone" type="text" name="Phone" /></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right;"><label id="ReasonLabel" for="Reason" class="bold">Reason for Inquiry: </label></td>
-                        <td>
-                            <select id="Reason" name="Reason">
-                                <option value="Catering">Catering</option>
-                                <option value="Private Party">Private Party</option>
-                                <option value="Feedback">Feedback</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right;vertical-align:top;"><lable id="AdditionalInfoLabel" for="AdditionalInfo" class="bold">Additional Information: </lable></td>
-                        <td><textarea id="AdditionalInfo" name="AdditionalInfo"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right;"><label id="BeenBeforeLabel" for="BeenBefore">Have you been to the restaurant? </label></td>
-                        <td>
-                            <input id="BeenBefore" type="radio" name="BeenBefore" value="No" checked />&nbsp;No&nbsp;&nbsp;
-                            <input id="BeenBefore" type="radio" name="BeenBefore" value="Yes" />&nbsp;Yes
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right;"><label id="DaysToContactLabel" for="DaysToContact">Best days to contact you: </label></td>
-                        <td>
-                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Monday" />&nbsp;M&nbsp;
-                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Tuesday" />&nbsp;T&nbsp;
-                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Wednesday" />&nbsp;W&nbsp;
-                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Thursday" />&nbsp;Th&nbsp;
-                            <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Friday" />&nbsp;F&nbsp;
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td style="font-size:smaller;">*<b>Bold fields</b> indicate a required entry</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><input id="SubmitButton" type="submit" value="Send Request" /></td>
-                    </tr>
-                </table>    
-                </form>
+                <div class="row">
+                    <div class="col-sm-11">
+                        <form class="form-horizontal" action="#" method="POST" autocomplete="on">                
+                            <div class="form-group">
+                                <label id="NameLabel" class="control-label col-sm-3" for="Name">Name*:</label>
+                                <div class="col-sm-9">
+                                    <input id="Name" type="text" class="form-control" placeholder="John Doe" name="Name" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label id="EmailLabel" class="control-label col-sm-3" for="Email">Email:</label>
+                                <div class="col-sm-9">
+                                    <input id="Email" type="email" class="form-control" placeholder="john_doe@gmail.com" name="Email" required />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label id="PhoneLabel" class="control-label col-sm-3 normal-font" for="Phone">Phone:</label>
+                                <div class="col-sm-9">
+                                    <input id="Phone" type="tel" class="form-control" placeholder="4792225555" name="Phone" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label id="ReasonLabel" class="control-label col-sm-3" for="Reason">Reason for Inquiry:</label>
+                                <div class="col-sm-9">
+                                    <select id="Reason" class="form-control" name="Reason" required>
+                                        <option value="Catering">Catering</option>
+                                        <option value="Private Party">Private Party</option>
+                                        <option value="Feedback">Feedback</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>          
+                            </div>
+                            <div class="form-group">
+                                <lable id="AdditionalInfoLabel" class="control-label col-sm-3" for="AdditionalInfo"><b>Additional Information:</b></lable>
+                                <div class="col-sm-9">
+                                    <textarea id="AdditionalInfo" class="form-control" rows="3" name="AdditionalInfo" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label id="BeenBeforeLabel" class="control-label col-sm-3 normal-font" for="BeenBefore">Have you been to the restaurant?</label>
+                                <div class="col-sm-9">
+                                    <label class="radio-inline">
+                                        <input id="BeenBefore" type="radio" name="BeenBefore" value="No" checked />No
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input id="BeenBefore" type="radio" name="BeenBefore" value="Yes" />Yes
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label id="DaysToContactLabel" class="control-label col-sm-3 normal-font" for="DaysToContact">Best days to contact you:</label>
+                                <div class="col-sm-9">
+                                    <label class="checkbox-inline">
+                                        <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Mon" />M
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Tues" />T
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Wed" />W
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Thurs" />Th
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input id="DaysToContact" type="checkbox" name="DaysToContact" value="Fri" />F
+                                    </label>
+                                </div>                        
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-9">
+                                    <p style="font-size:smaller; margin-top:5px;">*<b>Bold fields</b> indicate a required entry</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-9">
+                                    <input type="submit" class="btn btn-default" value="Send Request" />                            
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class=col-sm-1>
+                        <!-- Right margin of form -->
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="footer">
-            <table id="FooterTable" border="0">
-                <tr>
-                    <td style="padding:0px;"><h4>5801 Brian Street, Fayetteville, AR 72701</h4></td>
-                </tr>
-                <tr>
-                    <td style="padding:0px;"><h4>(479) B-FAMOUS &nbsp;/ &nbsp;(479) 232-6687</h4></td>
-                </tr>
-            </table>
         </div>
+
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                <table id="FooterTable">
+                    <tr>
+                        <td style="vertical-align:bottom;">
+                            <!-- Phone xs layout -->
+                            <div class="col-xs-12 visible-xs" style="padding-top:10px;">5801 Brian Street,</div>
+                            <div class="col-xs-12 visible-xs"> Fayetteville, AR 72701</div>
+                            <!-- Non-phone layout -->
+                            <div class="col-sm-12 visible-sm visible-md visible-lg">5801 Brian Street, Fayetteville, AR 72701</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="vertical-align:top;">
+                            <!-- Phone xs layout -->
+                            <div class="col-xs-12 visible-xs">(479) B-FAMOUS &nbsp;/</div>
+                            <div class="col-xs-12 visible-xs" style="padding-bottom:10px;"> &nbsp;(479) 232-6687</div>
+                            <!-- Non-phone layout -->
+                            <div class="col-sm-12 visible-sm visible-md visible-lg">(479) B-FAMOUS &nbsp;/ &nbsp;(479) 232-6687</div>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
