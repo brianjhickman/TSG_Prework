@@ -1,0 +1,20 @@
+Here are the answers to the questions asked at the end of this exercise:
+------------------------------------------------------------------------
+
+Q1) What happens when you leave num1 or num2 empty?
+
+- An alert pops up saying it must be filled in with a number.
+- The Bootstrap "has-error" class gets applied, giving the input control box a red glow.
+- The focus function gets applied, putting the cursor in that number's input control box, and making it the active control.
+
+
+
+Q2) For browsers that do not support the input type of "number," what happens when you enter in alphanumeric (letters and numbers) values?
+
+With the browsers that DO support the "number" input type, they automatically respond, upon the submit button being pressed, to "please enter a number," etc.  If a browser did NOT support this input type, though, the input type would default to "text"... and the submit button would then proceed further to the JavaScript validateItems() function.  Here, the isNaN() function would kick-in as a back-up safeguard, along with a similar alert and number input requirement.
+
+
+
+Q3) What happens if you enter "0" for num2? How does JavaScript handle the divide-by-zero situation?
+
+With an "infinity" result
